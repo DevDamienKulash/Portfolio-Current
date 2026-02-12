@@ -1,0 +1,150 @@
+/* =========================
+   Base / Tokens / Reset
+   ========================= */
+
+:root {
+  /* IMPORTANT: set this to your actual fixed navbar height */
+  --nav-h: 92px;
+
+  /* Colors (tune only if needed to match your design exactly) */
+  --bg: #1a1a1a;
+  --surface: rgba(255, 255, 255, 0.04);
+  --surface-2: rgba(255, 255, 255, 0.06);
+  --border: rgba(255, 255, 255, 0.1);
+
+  --text: rgba(255, 255, 255, 0.92);
+  --muted: rgba(255, 255, 255, 0.7);
+
+  --accent: #ff7a18; /* your orange */
+  --accent-2: rgba(255, 122, 24, 0.18);
+
+  /* Layout */
+  --container: 1120px;
+  --radius: 18px;
+
+  /* Typography */
+  --font-title:
+    "Syne", ui-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  --font-body:
+    "Rubik", ui-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+
+  --leading: 1.55;
+
+  /* Motion */
+  --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --dur: 220ms;
+}
+
+/* Smooth scroll for anchor snapping */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Always land sections below a fixed header */
+section {
+  scroll-margin-top: var(--nav-h);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  line-height: var(--leading);
+  color: var(--text);
+  background: var(--bg);
+
+  /* Reserve space for fixed navbar */
+  padding-top: var(--nav-h);
+  position: relative;
+  z-index: 0;
+}
+
+/* Media */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Links */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Buttons / inputs inherit font */
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+/* Remove default button styles (we'll style in components.css) */
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* Lists */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  font-family: var(--font-title);
+}
+
+p {
+  margin: 0;
+  color: var(--muted);
+}
+
+/* Accessibility: visible focus without changing your design layout */
+:focus {
+  outline: none;
+}
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 10px;
+}
+
+/* Utility container (we'll use this across pages) */
+.container {
+  width: min(100% - 2rem, var(--container));
+  margin-inline: auto;
+}
+.divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 0;
+}

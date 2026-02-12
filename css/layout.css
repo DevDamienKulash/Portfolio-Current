@@ -1,0 +1,225 @@
+/* =========================
+   Layout
+   ========================= */
+/* Spline Background */
+.spline-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+  opacity: 0; /* start invisible */
+  transition: opacity 2200ms ease; /* slow, premium fade */
+}
+
+.spline-viewer {
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: 0.45;
+}
+.spline-bg.is-visible {
+  opacity: 1;
+}
+.spline-bg spline-viewer {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Fixed header layout hook */
+header .nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--nav-h);
+}
+.site-header,
+main,
+footer {
+  position: relative;
+  z-index: 1;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .spline-bg {
+    transition: none;
+    opacity: 1;
+  }
+}
+/* HERO */
+/* ---------- Hero ---------- */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* horizontal center */
+  text-align: center; /* center text */
+  position: relative;
+}
+
+.hero-content {
+  max-width: 900px;
+  z-index: 2;
+}
+
+.hero-inner {
+  max-width: 900px;
+  z-index: 2;
+}
+
+.hero-text {
+  width: 100%;
+}
+
+/* Hide semantic h1 */
+.hero h1 {
+  font-family: var(--font-title);
+  font-size: clamp(3rem, 5.5vw, 4.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+/* ABOUT */
+.about {
+  padding: 5rem 0;
+}
+
+.about-top {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.about-title {
+  font-size: clamp(3rem, 5vw, 4rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.about-meta p,
+.about-tech p {
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.about-tech {
+  margin-top: 0.5rem;
+  margin-bottom: 1.75rem;
+}
+
+/* Mission + paragraph two-column */
+.about-grid {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.about-mission {
+  font-size: clamp(2.4rem, 3.8vw, 3.4rem);
+  line-height: 1.1;
+  font-family: var(--font-title);
+  color: var(--text);
+}
+
+.about-paragraph p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--muted);
+}
+
+/* Headshot centered */
+.about-photo {
+  margin-top: 3.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.about-photo img {
+  width: min(440px, 100%);
+  height: auto;
+  border-radius: var(--radius);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-photo {
+    margin-top: 2rem;
+  }
+}
+
+/* WORK */
+.work {
+  padding: 5rem 0;
+}
+.work-subtitle {
+  margin-top: 0.35rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.work .divider {
+  margin-top: 2.25rem;
+}
+
+.project-grid {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+/* Card layout only (styling lives in components.css) */
+.project-card {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.project-thumb img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+}
+
+/* =========================
+   Responsive
+   ========================= */
+
+@media (max-width: 960px) {
+  .about-inner {
+    grid-template-columns: 300px 1fr;
+  }
+}
+
+@media (max-width: 820px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .about-image {
+    max-width: 360px;
+  }
+}
+
+@media (max-width: 520px) {
+  :root {
+    --nav-h: 76px;
+  } /* slightly smaller nav on phones if you want */
+
+  .about,
+  .work,
+  .contact {
+    padding: 3.25rem 0;
+  }
+}

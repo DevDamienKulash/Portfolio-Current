@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Damien Kulash | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&family=Syne:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/pages.css" />
+  </head>
+
+  <body>
+    <!-- Spline background -->
+    <div class="spline-bg" aria-hidden="true">
+      <script
+        type="module"
+        src="https://unpkg.com/@splinetool/viewer@1.12.52/build/spline-viewer.js"
+      ></script>
+
+      <spline-viewer
+        url="https://prod.spline.design/RlUR3Uj0OC9ZQIBa/scene.splinecode"
+      ></spline-viewer>
+    </div>
+    <!-- =========================
+       Fixed Navbar
+  ========================== -->
+    <header>
+      <div class="container nav-inner">
+        <a href="#home" class="logo">Damien Kulash</a>
+
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#work">WORK</a></li>
+            <li><a href="#footer" class="nav-cta">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- =========================
+       Hero Section
+  ========================== -->
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1 data-reveal="text">
+            Created from the ground up using HTML/CSS & JS
+          </h1>
+
+          <div class="hero-buttons" data-reveal="text">
+            <a href="#about" class="btn">ABOUT ME</a>
+            <a href="#work" class="btn btn-outline">EXPLORE WORK</a>
+            <a
+              href="assets/resume/Damien-Kulash-Resume.pdf"
+              class="btn btn-outline"
+              target="_blank"
+              rel="noopener"
+            >
+              RESUME
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+       About Section
+  ========================== -->
+    <section id="about" class="about">
+      <div class="container">
+        <!-- Top header block -->
+        <div class="about-top" data-reveal="text">
+          <h2 class="about-title">About Me</h2>
+
+          <div class="about-meta">
+            <p>Damien Kulash - He / Him</p>
+            <p>Based in the St. Louis area</p>
+            <p>Web Designer - Full stack Developer - Graphic Designer</p>
+          </div>
+
+          <div class="about-tech">
+            <p>HTML - CSS - JavaScript - React - C# - C++</p>
+            <p>Photoshop - Illustrator - Indesign - Figma - Spline</p>
+          </div>
+
+          <hr class="divider" />
+        </div>
+
+        <!-- Two-column mission + paragraph -->
+        <div class="about-grid" data-reveal="text">
+          <h3 class="about-mission">
+            My mission is to build software that is clean, scalable, and built
+            to last.
+          </h3>
+
+          <div class="about-paragraph">
+            <p>
+              I’m a developer based in St. Louis focused on building modern web
+              applications. I care about writing clean, maintainable code and
+              creating user experiences that feel fast and intuitive. Whether
+              it’s building a full-stack application, optimizing performance, or
+              designing component architecture, I approach development with a
+              focus on clarity.
+            </p>
+          </div>
+        </div>
+
+        <!-- Headshot -->
+        <div class="about-photo" data-reveal="text">
+          <img
+            src="assets/img/headshot.png"
+            alt="Damien Kulash headshot"
+            width="520"
+            height="520"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+     Experience Section
+========================= -->
+    <section id="experience" class="experience" data-reveal="card">
+      <div class="container">
+        <h2 class="section-title" data-reveal="text">Experience</h2>
+        <div class="section-rule" aria-hidden="true"></div>
+
+        <div class="timeline" data-reveal="text">
+          <!-- Item -->
+          <article class="timeline-item" data-reveal="text">
+            <div class="timeline-dot" aria-hidden="true"></div>
+
+            <div class="timeline-content">
+              <div class="timeline-head">
+                <h3>College</h3>
+                <span class="timeline-year">2026</span>
+              </div>
+
+              <p class="timeline-meta">
+                Major : Computer Science / Minor : Graphic Design
+              </p>
+              <p class="timeline-meta">Graduated : January 2026</p>
+
+              <ul class="timeline-bullets">
+                <li>
+                  Built full-stack web applications using JavaScript and React
+                </li>
+                <li>
+                  Learned data structures, algorithms, and software engineering
+                  principles
+                </li>
+                <li>
+                  Designed user interfaces with a focus on usability and visual
+                  clarity
+                </li>
+                <li>
+                  Completed team-based development projects using Git and Agile
+                  methods
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item" data-reveal="text">
+            <div class="timeline-dot" aria-hidden="true"></div>
+
+            <div class="timeline-content">
+              <div class="timeline-head">
+                <h3>Aragon</h3>
+                <span class="timeline-year">2018</span>
+              </div>
+
+              <p class="timeline-meta">Title : HVAC Technician</p>
+
+              <ul class="timeline-bullets">
+                <li>Installed and serviced residential HVAC systems</li>
+                <li>Diagnosed technical issues and performed system repairs</li>
+                <li>
+                  Worked directly with customers to explain solutions clearly
+                </li>
+                <li>
+                  Maintained safety standards and efficient workflow on job
+                  sites
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item" data-reveal="text">
+            <div class="timeline-dot" aria-hidden="true"></div>
+
+            <div class="timeline-content">
+              <div class="timeline-head">
+                <h3>Micro Center</h3>
+                <span class="timeline-year">2020</span>
+              </div>
+
+              <p class="timeline-meta">Title : Computer tech / Sales</p>
+
+              <ul class="timeline-bullets">
+                <li>Diagnosed and repaired hardware and software issues</li>
+                <li>Built and upgraded custom PCs</li>
+                <li>
+                  Assisted customers in selecting appropriate tech solutions
+                </li>
+                <li>
+                  Balanced technical troubleshooting with strong customer
+                  service
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item" data-reveal="text">
+            <div class="timeline-dot" aria-hidden="true"></div>
+
+            <div class="timeline-content">
+              <div class="timeline-head">
+                <h3>Blackburn College</h3>
+                <span class="timeline-year">2022</span>
+              </div>
+
+              <p class="timeline-meta">Title : Resident Assistant</p>
+
+              <ul class="timeline-bullets">
+                <li>Mentored and supported 30+ student residents</li>
+                <li>
+                  Resolved conflicts and promoted a positive community
+                  environment
+                </li>
+                <li>Organized campus events and engagement activities</li>
+                <li>Acted as a liaison between students and administration</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item" data-reveal="text">
+            <div class="timeline-dot" aria-hidden="true"></div>
+
+            <div class="timeline-content">
+              <div class="timeline-head">
+                <h3>Freelance / Fiverr</h3>
+                <span class="timeline-year">2026</span>
+              </div>
+
+              <p class="timeline-meta">Title : Web Developer</p>
+
+              <ul class="timeline-bullets">
+                <li>
+                  Designed and developed responsive websites for small
+                  businesses
+                </li>
+                <li>Built projects using React, JavaScript, and modern CSS</li>
+                <li>
+                  Communicated directly with clients to gather requirements
+                </li>
+                <li>Delivered projects on time with clear documentation</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+       Work Section
+  ========================== -->
+    <section id="work" class="work">
+      <div class="container">
+        <h2>My Work</h2>
+        <p>
+          All of my prjects are built form the ground up. I always start a
+          project by designing the layout and assets (Photoshop, Illustrator,
+          Figma). When a design is done and use cases are accounted for I bring
+          the design to life using HTML/CSS and JS for front end projects or
+          C#/C++ for backend projects.
+        </p>
+        <hr class="divider" />
+
+        <div class="project-grid">
+          <article class="project-card" data-reveal="card" data-stagger="work">
+            <a href="projects/ai-studio.html" class="project-thumb">
+              <img
+                src="assets/img/thumb-ai-studio.webp"
+                alt="AI Studio thumbnail"
+                loading="lazy"
+                width="600"
+                height="400"
+              />
+            </a>
+
+            <div class="project-info">
+              <h3>Ai Studio</h3>
+
+              <div class="project-links">
+                <a
+                  href="https://github.com/DevDamienKulash/AiStudio"
+                  target="_blank"
+                  rel="noopener"
+                  >GITHUB</a
+                >
+                <a
+                  href="https://ai-studio-alpha-jet.vercel.app/"
+                  target="_blank"
+                  rel="noopener"
+                  >DEMO</a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="project-card" data-reveal="card" data-stagger="work">
+            <a href="projects/finance-app.html" class="project-thumb">
+              <img
+                src="assets/img/thumb-finance-app.webp"
+                alt="Finacnce App thumbnail"
+                loading="lazy"
+                width="600"
+                height="400"
+              />
+            </a>
+
+            <div class="project-info">
+              <h3>Finance App</h3>
+
+              <div class="project-links">
+                <a
+                  href="https://github.com/DevDamienKulash/Finance-Tracker"
+                  target="_blank"
+                  rel="noopener"
+                  >GITHUB</a
+                >
+                <a
+                  href="https://finance-tracker-azure-ten.vercel.app/"
+                  target="_blank"
+                  rel="noopener"
+                  >DEMO</a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="project-card" data-reveal="card" data-stagger="work">
+            <a href="projects/flow.html" class="project-thumb">
+              <img
+                src="assets/img/thumb-flow.webp"
+                alt="Flow thumbnail"
+                loading="lazy"
+                width="600"
+                height="400"
+              />
+            </a>
+
+            <div class="project-info">
+              <h3>Flow</h3>
+
+              <div class="project-links">
+                <a
+                  href="https://github.com/DevDamienKulash/Flow"
+                  target="_blank"
+                  rel="noopener"
+                  >GITHUB</a
+                >
+                <a
+                  href="https://flow-faucet-alpha.vercel.app/"
+                  target="_blank"
+                  rel="noopener"
+                  >DEMO</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal="card" data-stagger="work">
+            <a href="projects/geowatch.html" class="project-thumb">
+              <img
+                src="assets/img/thumb-geowatch.webp"
+                alt="Geowatch thumbnail"
+                loading="lazy"
+                width="600"
+                height="400"
+              />
+            </a>
+
+            <div class="project-info">
+              <h3>Geowatch</h3>
+
+              <div class="project-links">
+                <a
+                  href="https://github.com/DevDamienKulash/geowatch"
+                  target="_blank"
+                  rel="noopener"
+                  >GITHUB</a
+                >
+                <a
+                  href="https://geowatch.netlify.app/"
+                  target="_blank"
+                  rel="noopener"
+                  >DEMO</a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="project-card" data-reveal="card" data-stagger="work">
+            <a href="projects/nova.html" class="project-thumb">
+              <img
+                src="assets/img/thumb-nova.webp"
+                alt="Nova thumbnail"
+                loading="lazy"
+                width="600"
+                height="400"
+              />
+            </a>
+
+            <div class="project-info">
+              <h3>Nova</h3>
+
+              <div class="project-links">
+                <a
+                  href="https://github.com/DevDamienKulash/nova"
+                  target="_blank"
+                  rel="noopener"
+                  >GITHUB</a
+                >
+                <a
+                  href="https://nova-ecru-eight.vercel.app/"
+                  target="_blank"
+                  rel="noopener"
+                  >DEMO</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal="card" data-stagger="work">
+            <a href="projects/parallax.html" class="project-thumb">
+              <img
+                src="assets/img/thumb-parallax.webp"
+                alt="Parallax thumbnail"
+                loading="lazy"
+                width="600"
+                height="400"
+              />
+            </a>
+
+            <div class="project-info">
+              <h3>Parallax</h3>
+
+              <div class="project-links">
+                <a
+                  href="https://github.com/DevDamienKulash/Parallax"
+                  target="_blank"
+                  rel="noopener"
+                  >GITHUB</a
+                >
+                <a
+                  href="https://parallax-5q98crvft-damien-kulashs-projects.vercel.app/"
+                  target="_blank"
+                  rel="noopener"
+                  >DEMO</a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="project-card" data-reveal="card" data-stagger="work">
+            <a href="projects/stack.html" class="project-thumb">
+              <img
+                src="assets/img/thumb-stack.webp"
+                alt="Stack thumbnail"
+                loading="lazy"
+                width="600"
+                height="400"
+              />
+            </a>
+
+            <div class="project-info">
+              <h3>Stack</h3>
+
+              <div class="project-links">
+                <a
+                  href="https://github.com/DevDamienKulash/Stack"
+                  target="_blank"
+                  rel="noopener"
+                  >GITHUB</a
+                >
+                <a
+                  href="https://stack-bice-five.vercel.app/"
+                  target="_blank"
+                  rel="noopener"
+                  >DEMO</a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="project-card" data-reveal="card" data-stagger="work">
+            <a href="projects/urbix.html" class="project-thumb">
+              <img
+                src="assets/img/thumb-urbix.webp"
+                alt="Urbix thumbnail"
+                loading="lazy"
+                width="600"
+                height="400"
+              />
+            </a>
+
+            <div class="project-info">
+              <h3>Urbix</h3>
+
+              <div class="project-links">
+                <a
+                  href="https://github.com/DevDamienKulash/Urbix"
+                  target="_blank"
+                  rel="noopener"
+                  >GITHUB</a
+                >
+                <a
+                  href="https://urbix-phi.vercel.app/"
+                  target="_blank"
+                  rel="noopener"
+                  >DEMO</a
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+       Footer
+  ========================== -->
+    <footer class="site-footer" id="footer" data-reveal="text">
+      <div class="container footer-inner">
+        <p class="footer-kicker">Get in Touch With Me</p>
+
+        <a class="footer-email" href="mailto:damien.kulash.dev@gmail.com">
+          damienjkulash@gmail.com
+        </a>
+
+        <div class="footer-social">
+          <a
+            class="footer-icon"
+            href="https://github.com/DevDamienKulash"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+          >
+            <img src="assets/img/icons/Github.webp" alt="GitHub" />
+          </a>
+
+          <a
+            class="footer-icon"
+            href="https://www.linkedin.com/in/damien-kulash-833636237/"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+          >
+            <img src="assets/img/icons/Linkedin.webp" alt="LinkedIn" />
+          </a>
+        </div>
+
+        <hr class="divider footer-divider" />
+
+        <p class="footer-copy">© 2026. damienkulash. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

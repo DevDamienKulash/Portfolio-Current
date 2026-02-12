@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finance App | Damien Kulash</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&family=Syne:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/pages.css" />
+  </head>
+
+  <body>
+    <!-- Spline background -->
+    <div class="spline-bg" aria-hidden="true">
+      <script
+        type="module"
+        src="https://unpkg.com/@splinetool/viewer@1.12.52/build/spline-viewer.js"
+      ></script>
+
+      <spline-viewer
+        url="https://prod.spline.design/RlUR3Uj0OC9ZQIBa/scene.splinecode"
+      ></spline-viewer>
+    </div>
+    <!-- Fixed Navbar -->
+    <header>
+      <div class="container nav-inner">
+        <a href="../index.html" class="logo">Damien Kulash</a>
+
+        <nav>
+          <ul class="nav-links">
+            <li><a href="../index.html#about">ABOUT</a></li>
+            <li><a href="../index.html#work">WORK</a></li>
+            <li><a href="../index.html#footer">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Project Hero -->
+    <main class="project">
+      <section class="project-page">
+        <div class="container">
+          <!-- Top text -->
+          <div class="project-top">
+            <h1>Finance App</h1>
+            <p>
+              A full-stack financial tracking application that allows users to
+              monitor income, expenses, and overall financial trends in real
+              time. Designed to simplify personal budgeting through dynamic data
+              visualization and clean UI structure.
+            </p>
+          </div>
+
+          <hr class="divider project-divider" />
+
+          <!-- Big centered hero image -->
+          <div class="project-hero-media" data-reveal="card">
+            <img
+              src="../assets/img/hero-finance-app.webp"
+              alt="Finance App preview"
+              loading="eager"
+              decoding="async"
+              width="1400"
+              height="900"
+            />
+          </div>
+
+          <!-- Key Features -->
+          <div class="project-blocks">
+            <section class="project-block" data-reveal="text">
+              <h2>Key Features</h2>
+              <ul class="bullets" data-reveal="text">
+                <li>Add / Edit / Delete transactions</li>
+                <li>Category breakdown charts</li>
+                <li>Monthly filtering</li>
+                <li>Real-time total calculations</li>
+                <li>Responsive dashboard layout</li>
+              </ul>
+            </section>
+
+            <!-- Technical Breakdown -->
+            <section class="project-block" data-reveal="text">
+              <h2>Technical Breakdown</h2>
+              <ul class="bullets" data-reveal="text">
+                <li>Built with React and component-based architecture</li>
+                <li>Managed application state using React Hooks</li>
+                <li>Implemented dynamic rendering based on transaction data</li>
+                <li>Integrated chart visualization library for analytics</li>
+                <li>Structured reusable components for scalability</li>
+              </ul>
+            </section>
+          </div>
+          <hr class="divider" style="margin-top: 2.5rem" />
+
+          <!-- Bottom nav row (matches design) -->
+          <div class="project-nav">
+            <a id="projectPrev" class="project-nav-link" href="#"
+              >← PREVIOUS WORK</a
+            >
+
+            <div class="project-nav-actions">
+              <a
+                class="btn"
+                href="https://ai-studio-alpha-jet.vercel.app/"
+                target="_blank"
+                rel="noopener"
+                >DEMO</a
+              >
+
+              <a
+                class="btn btn-outline"
+                href="https://github.com/DevDamienKulash/AiStudio"
+                target="_blank"
+                rel="noopener"
+                >GIT REPO</a
+              >
+            </div>
+
+            <a id="projectNext" class="project-nav-link" href="#"
+              >NEXT WORK →</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer" id="footer">
+      <div class="container footer-inner">
+        <p class="footer-kicker">Get in Touch With Me</p>
+
+        <a class="footer-email" href="mailto:damien.kulash.dev@gmail.com">
+          damienjkulash@gmail.com
+        </a>
+
+        <div class="footer-social">
+          <a
+            class="footer-icon"
+            href="https://github.com/DevDamienKulash"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+          >
+            <img src="../assets/img/icons/Github.webp" alt="GitHub" />
+          </a>
+
+          <a
+            class="footer-icon"
+            href="https://www.linkedin.com/in/damien-kulash-833636237/"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+          >
+            <img src="../assets/img/icons/Linkedin.webp" alt="LinkedIn" />
+          </a>
+        </div>
+
+        <hr class="divider footer-divider" />
+
+        <p class="footer-copy">© 2026. damienkulash. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="../js/projects-index.js"></script>
+    <script src="../js/project-nav.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
