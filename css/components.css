@@ -486,3 +486,69 @@ header {
     gap: 0.35rem;
   }
 }
+/* ---------- Mobile: hero CTAs stack ---------- */
+@media (max-width: 560px) {
+  .hero-buttons {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+    width: 100%;
+    max-width: 22rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero .btn {
+    width: 100%;
+    justify-content: center;
+    padding: 0.95rem 1.25rem; /* smaller than desktop */
+    font-size: 0.82rem;
+  }
+}
+/* ---------- Mobile: footer email wraps ---------- */
+@media (max-width: 560px) {
+  .footer-email {
+    font-size: clamp(1.35rem, 6vw, 1.85rem);
+    text-align: center;
+
+    /* Key fix for long emails on small screens */
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    line-height: 1.15;
+  }
+
+  .footer-social {
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-icon {
+    width: 92px;
+    height: 92px;
+  }
+
+  .footer-icon img {
+    width: 62px;
+    height: 62px;
+  }
+}
+/* ---------- Mobile: header compacts cleanly ---------- */
+@media (max-width: 560px) {
+  .nav-inner {
+    gap: 0.75rem;
+  }
+
+  .logo {
+    font-size: 1.65rem;
+    line-height: 1;
+  }
+
+  .nav-links a {
+    font-size: 0.68rem;
+  }
+
+  .nav-cta {
+    padding: 0.45rem 0.9rem;
+  }
+}
